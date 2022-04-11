@@ -1,10 +1,10 @@
 <!doctype html>
 <!-- If multi-language site, reconsider usage of html lang declaration here. -->
-<html lang="en"> 
+<html lang="en">
 
 <head>
   <meta charset="utf-8">
-  <title>Client</title>
+  <title>Tabs</title>
   <!-- View-port Basics: http://mzl.la/VYREaP -->
   <!-- This meta tag is used for mobile device to display the page without any zooming,
        so how much the device is able to fit on the screen is what's shown initially. 
@@ -13,10 +13,11 @@
   <!-- Place favicon.ico in the root directory: mathiasbynens.be/notes/touch-icons -->
   <link rel="shortcut icon" href="favicon.ico" />
   <!--font-awesome link for icons-->
-  <link rel="stylesheet" media="screen" href="assets/vendor/font-awesome/css/all.min.css" >
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- jquery link for functionalities -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   <!-- Default style-sheet is for 'media' type screen (color computer display).  -->
-  <link rel="stylesheet" media="screen" href="assets/css/style.css" >
+  <link rel="stylesheet" media="screen" href="assets/css/style.css">
 </head>
 
 <body>
@@ -24,17 +25,47 @@
   <div class="container">
     <!--header section start-->
     <header>
-      
+      <nav>
+        <ul class="nav-list">
+          <li class="nav-item">home</li>
+          <li class="nav-item">work</li>
+          <li class="nav-item">contact</li>
+          <li class="nav-item">about</li>
+        </ul>
+      </nav>
     </header>
     <!--header section start-->
     <!--main section start-->
     <main>
-
+      <div class="tab-container">
+        <ul class="tab-list">
+          <li class="home">
+            <figure>
+              <img src="https://media.giphy.com/media/W5Twuq0Fvl8POWHXDf/giphy.gif" alt="Home">
+            </figure>
+          </li>
+          <li class="work">
+            <figure>
+              <img src="https://media.giphy.com/media/toXKzaJP3WIgM/giphy.gif" alt="Work">
+            </figure>
+          </li>
+          <li class="contact">
+            <figure>
+              <img src="https://media.giphy.com/media/KpOqvmCFdNMhF0pQb7/giphy.gif" alt="Contact">
+            </figure>
+          </li>
+          <li class="about">
+            <figure>
+              <img src="https://media.giphy.com/media/495ybhbz2CxWJoenNM/giphy.gif" alt="About">
+            </figure>
+          </li>
+        </ul>
+      </div>
     </main>
     <!--main section end-->
 
     <!--footer section start-->
-    <footer>      
+    <footer>
 
     </footer>
     <!--footer section end-->
@@ -43,4 +74,5 @@
   <!--container end-->
   <script src="assets/js/script.js"></script>
 </body>
+
 </html>
