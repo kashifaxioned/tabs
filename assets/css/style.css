@@ -107,8 +107,27 @@ li {
   Header styling starts here
 =================================*/
 
+nav {
+  background-color: #1C0A00;
+}
 
+.nav-list {
+  width: 70%;
+  margin: 0 auto;
+  padding: 20px 0 ;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 120px;
+  color: #fff;
+}
 
+.nav-item {
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+.nav-item:hover { transform: scale(1.2); }
 
 
 
@@ -120,7 +139,22 @@ li {
   main styling starts here
 =================================*/
 
+* { overflow: hidden; }
 
+.tab-list {
+  width: 50%;
+  margin: 20px auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.tabs-item { 
+  display: none; 
+  opacity: 0;
+  transition: .3s ease-in-out;
+}
+
+.showTab { display: block; }
 
 
 
