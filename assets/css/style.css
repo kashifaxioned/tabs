@@ -149,12 +149,12 @@ nav {
 }
 
 .tabs-item { 
-  display: none; 
+  position: absolute;
   opacity: 0;
   transition: .3s ease-in-out;
 }
 
-.showTab { display: block; }
+.showTab { opacity: 1; }
 
 
 
